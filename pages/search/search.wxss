@@ -1,0 +1,25 @@
+@import '../components/searchInput/searchInput.wxss'
+.swiper_content swiper{
+	width: 100%;
+	height: 600rpx;
+}
+.swiper_image{
+	width: 100%;
+	height: 100%;
+}
+.search_title {
+	width: 100%;
+	height: 400rpx;
+	overflow: hidden;
+}
+.word_content{
+	text-align: center;
+}
+.title_font {
+	font-size: 60rpx;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.title_font_content {
+	margin: 30rpx auto;
+}

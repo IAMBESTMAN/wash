@@ -1,0 +1,17 @@
+<view class="btn" animation="{{animationData}}">
+	<image class="avatar" src="{{animation0.picUrl}}" binderror="" bindload=""></image>
+	<text class="avatar_text"> 打开红包获得 {{animation0.amount}} 元现金</text>			
+</view>
+<view class="btn" animation="{{animationData1}}">
+	<image class="avatar" src="{{animation1.picUrl}}" binderror="" bindload=""></image>	
+	<text class="avatar_text"> 打开红包获得 {{animation1.amount}} 元现金</text>		
+</view>
+<view class="btn" animation="{{animationData2}}">
+	<image class="avatar" src="{{animation2.picUrl}}" binderror="" bindload=""></image>	
+	<text class="avatar_text"> 打开红包获得 {{animation2.amount}} 元现金</text>		
+</view>
+<view class="title_content">
+	<view class="rule">活动规则</view>
+	<view class="title">每天100000个红包等你来抢</view>
+	<view class="residue">仅剩余</view>
+</view>

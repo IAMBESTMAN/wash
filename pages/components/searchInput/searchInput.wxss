@@ -1,0 +1,25 @@
+.search_content{
+	width: 90%;
+	height: 80rpx;
+	font-size: 18px;
+	margin: 0 auto;
+	display: flex;
+	border-radius: 150rpx;
+	padding-left: 40rpx;
+	box-sizing: border-box;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid #ddd;
+}
+.search_content > input {
+	margin-left: 30rpx;
+}
+.search_content > view {
+	height: 100%;
+	width: 30%;
+	line-height: 80rpx;
+	border-top-right-radius: 150rpx;
+	border-bottom-right-radius: 150rpx;
+	border: 1px solid #ddd;
+	text-align: center;
+}

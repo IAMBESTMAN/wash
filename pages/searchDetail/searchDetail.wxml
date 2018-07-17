@@ -1,0 +1,45 @@
+<scroll-view scroll-y="true">
+<block wx:for="{{list_content}}" wx:key="index">
+	<view class="list_content" data-id="{{item.itemId}}" data-name="{{item.itemName}}" bindtap="jump_detail">
+		<image style="" mode="" src="{{item.pictUrl}}" binderror="" bindload=""></image>
+		<view class="detail">
+			<view class="detail_title">{{item.itemName}}</view>
+			<view class="money_detail">
+				<view class="icon_content">
+					<image class="icon_img" style="width: 20px;height: 20px" src="../../images/icon_Popup_tb@2x.png"></image>
+					<text class="icon_title">淘宝原价：</text>		
+				</view>	
+				<view class="price_sty">
+					¥{{item.originalPrice}}					
+				</view>
+			</view>
+			<view class="money_detail">
+				<view class="icon_content">
+					<image class="icon_img" style="width: 20px;height: 20px"  src="../../images/icon_Popup_quan@2x.png" ></image>
+					<text class="icon_title">下单立减：</text>		
+				</view>	
+				<view class="price_sty">
+					-¥{{item.redBag}}			
+				</view>
+			</view>
+			<view class="money_detail">
+				<view class="icon_content">
+					<image class="icon_img" style="width: 20px;height: 20px"  src="../../images/icon_Popup_fan@2x.png"></image>
+					<text class="icon_title">购即省价：</text>		
+				</view>	
+				<view class="save_money">
+					¥{{item.differ}}
+				</view>
+			</view>
+		</view>
+	</view>
+</block>
+</scroll-view>
+<view class="loading" wx:if="{{loading}}">
+	正在加载中......
+</view>
+<view class="loading" wx:if="{{loaded}}">
+	没有更多数据
+</view>
+<import src="../components/pop_up_window/pop_up_window"/>
+<template  is="msgItem" data="{{markStatus,detailData}}"></template>	

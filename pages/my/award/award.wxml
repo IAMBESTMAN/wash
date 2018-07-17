@@ -1,0 +1,34 @@
+<view class="title">
+	<view class="{{ status == 'waitAward' ? 'active' : ''}}" bindtap="handle_waitAward">待奖励</view>
+	<view></view>
+	<view class="{{ status == 'award' ? 'active' : ''}}" bindtap="handle_award">已奖励</view>
+</view>
+<view class="prompt">
+	<view wx:if="{{status === 'waitAward'}}">
+		<text>已经付款,但是没有看到订单</text>	
+		<i class="iconfont icon-iconfonticonfonti2copycopy"></i>	
+	</view>
+	<view wx:else>
+		<text>已经确认收货,但是没有收到奖励</text>	
+		<i class="iconfont icon-iconfonticonfonti2copycopy"></i>
+	</view>
+</view>
+<view class="order_content" wx:for="{{orders}}" wx:key="index">
+	<view class="order_list_content">
+		<view class="order_title">
+			<text> {{ item.shopName }} </text>
+			<text style="color: #ff6500"> {{ status == 'waitAward' ? '等待确认收货' : '奖励成功发放'}} </text>				
+		</view>
+		<view class="order_section">
+			<block wx:for="{{item.itemList}}" wx:key="key">
+				<view class="order_section_content">
+					<image style="" mode="" src="{{item.picUrl}}" binderror="" bindload=""></image>
+					<view>{{item.itemName}}</view>
+				</view>
+			</block>			
+		</view>
+		<view class="order_footer">
+			共计 {{item.itemList.length}} 件商品，确认收货收奖励：<text style="font-size: 36rpx; color: #ff6500">{{item.total}}</text>	
+		</view>
+	</view>	 
+</view>

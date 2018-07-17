@@ -1,0 +1,104 @@
+<view class="avatar_content">
+	<image src="{{userInfo.avatarUrl}}" class="avatar"/>
+	<view class="user_mag">
+		<view class="nick_name">{{userInfo.nickName}}</view>
+		<view class="nick_id">ID: 12032131</view>
+	</view>
+	<i class="iconfont icon-iconfonticonfonti2copycopy my_detail"> </i>		
+</view>
+<swiper
+	class="lamp"
+	autoplay="true"
+	interval="2000"
+	circular="true"
+	vertical="true"
+	display-multiple-items="1"
+>
+	<block wx:for="{{ effectList }}" wx:key="index">
+		<swiper-item class="lamp_content">
+			<image style="width:50rpx;height:50rpx;border-radius: 50%;" mode="" src="{{item.picUrl}}" binderror="" bindload=""></image>
+			<text> {{ item.userName }}在{{ item.minute }}分钟前成功提现 <text style="color:red">{{ item.amount }}</text> 元至微信余额</text>		
+		</swiper-item>
+	</block>
+</swiper>
+
+<view class="sction_content">
+	<view style="margin-bottom:40rpx;overflow:hidden">
+		<image src="../../images/icon_mine_Putforward@2x.png" class="put_for_ward"/>
+		<view class="money_content">
+			<view class="incarnate">{{amount}}</view>
+			<view class="incarnate_msg">可提现 (元)</view>
+		</view>
+		<image class="incarnate_btn" src="../../images/button_mine_Putforward@2x.png"/>
+	</view>
+	<view class="line"></view>
+	<view class="incarnate_detail">
+		<view class="grand_rebate">
+			<view class="rebate">{{amount}}</view>
+			<view class="rebate_msg">累计返利 (元)</view>
+		</view>
+		<view class="wait_rebate"> 
+			<view class="rebate">{{waitAmount}}</view>
+			<view class="rebate_msg">待返利 (元)</view>
+		</view>	
+	</view>
+</view>
+
+<view class="my_indent">
+	<view class="indent_title">
+		<view>
+			我的订单
+		</view>
+		<view class="see_all" bindtap="already_indent">
+			<text>查看全部</text>		
+			<i class="iconfont icon-iconfonticonfonti2copycopy list_icon"> </i>	
+		</view>
+	</view>
+	<view class="my_list" bindtap="wait_indent">
+		<image src="../../images/icon_mine_wait@2x.png"/>
+		<view class="list_title">待奖励订单</view>
+		<view class="list_description">
+			<text class="iconfont icon-iconfonticonfonti2copycopy list_icon"> </text>		
+			<text>已经付款，请确认收货后发放奖励</text>	
+		</view>
+	</view>
+	<view class="my_list" bindtap="already_indent">
+		<image src="../../images/icon_mine_compelet@2x.png"/>
+		<view class="list_title">已奖励订单</view>
+		<view class="list_description">
+			<text class="iconfont icon-iconfonticonfonti2copycopy list_icon"> </text>		
+			<text>已经发放奖励的订单</text>	
+		</view>
+	</view>
+	<view class="my_list">
+		<image src="../../images/icon_mine_service@2x.png"/>
+		<view class="list_title">联系客服</view>
+		<view class="list_description">
+			<text class="iconfont icon-iconfonticonfonti2copycopy list_icon"> </text>		
+			<text>任何问题和建议都可以与我们沟通</text>	
+		</view>
+	</view>
+</view>
+
+
+
+
+
+
+
+
+
+<view class="{{ modalStatus ? 'showModal' : 'hideModal'}}">
+<view class="browser-content">
+  <view class="remindTitle"> 系统提示 </view>
+  <text class="remindWord"> 您还未授权，请在授权后进行查看 </text>
+  <view class="btn-content">
+      <button open-type="getUserInfo" class="confirmBtn" bindgetuserinfo="handleConfirm">
+        确认
+      </button>
+      <view class="cancelBtn" bindtap="handleCancel">
+        取消
+      </view>
+  </view>
+</view>
+</view>

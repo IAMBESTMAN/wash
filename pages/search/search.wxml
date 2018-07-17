@@ -1,0 +1,30 @@
+<import src="../components/searchInput/searchInput.wxml"/>
+<view class="search_title">
+	<view class="word_content">
+		<view class="title_font_content">
+			<text class="title_font">淘宝</text> x <text class="title_font">天猫</text> 
+		</view>
+		<view style="margin: 40rpx auto;font-weight:bold">
+			所有商品都有返利
+		</view>	
+	</view>
+	<template is="searchInput"></template>	
+</view>
+<view class="">
+	
+</view>
+
+<view class="swiper_content">
+	<!-- 轮播图的容器 -->
+	<swiper
+		indicator-dots = "true"
+		autoplay = "true"
+		circular = "true"
+	>
+		<block wx:for="{{imgUrls}}" wx:key="index">
+			<swiper-item>
+				<image src="{{item}}" class="swiper_image"></image>
+			</swiper-item>
+		</block>		
+	</swiper>
+</view>

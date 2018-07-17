@@ -1,0 +1,9 @@
+<template name="searchInput">
+  <view class="search_content">
+	<!-- 搜索的容器 -->
+	<i class="iconfont icon-search"></i>
+	<input bindinput="handle_input" placeholder="宝贝名称/关键词" placeholder-style="font-size:18px"/>
+	<view bindtap="handle_search">搜商品</view>	
+  </view>
+
+</template>

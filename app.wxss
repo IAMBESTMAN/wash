@@ -1,0 +1,12 @@
+/**app.wxss**/
+@import 'css/font.wxss'
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 24rpx;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 

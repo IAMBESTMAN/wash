@@ -1,0 +1,243 @@
+page{
+	font-size: 16px;
+	background: #f2f2f2;
+}
+.showModal{
+  display: block;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(104, 104, 104, 0.5);
+}
+.hideModal{
+  display: none;
+}
+.browser-content {
+    position: relative;
+    font-size: 16px;
+    line-height: 30px;
+    box-sizing: border-box;
+    left: 10%;
+    width: 80%;
+    background: #fff;
+    border-radius: 10px;
+    top: 35%;
+    height:30%;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.remindWord{
+  width: 100%;
+  padding: 10px;
+  display:inline-block;
+  box-sizing: border-box;
+  /*text-align: center;*/
+}
+.remindTitle {
+  /*display: inline-block;*/
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  border-bottom: 1px solid #ddd;
+  text-align:center;
+}
+.btn-content{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.confirmBtn, .cancelBtn{
+  width: 50%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;  
+  background: #fff;
+  font-size: 14px;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.confirmBtn {
+  color:#1AAD16;
+  border-right: 1px solid #ddd;
+}
+.avatar_content{
+	width: 100%;
+	height: 190rpx;
+	padding: 40rpx 30rpx 30rpx 30rpx;
+	background: #fff;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.avatar{
+	width: 120rpx;
+	height: 120rpx;
+	border-radius:50%;
+	margin-right: 30rpx;
+	float: left;
+}
+.user_mag {
+	float: left;
+	font-size: 36rpx;
+}
+.nick_name {
+	margin-top: 10rpx;
+}
+.nick_id {
+	margin-top: 30rpx;
+	font-size: 28rpx;
+}
+.my_detail {
+	height: 100%;
+	line-height: 120rpx;
+	/*margin-right: 20rpx;*/
+	font-size: 48rpx;
+	float: right;
+	color: #ebecef;
+}
+.lamp {
+	width: 100%;
+	height: 60rpx;
+	background: #fbedd9;
+	overflow: hidden;
+}
+.sction_content{
+	width: 100%;
+	background: #fff;
+	/*margin-top: 20rpx;*/
+	padding-bottom: 45rpx;
+}
+
+.put_for_ward{
+	width: 100rpx;
+	height:100rpx;
+	float: left;
+	margin: 40rpx 40rpx 0rpx 50rpx;
+}
+.money_content{
+	float: left;
+}
+.incarnate{
+	font-size: 56rpx;
+	margin-top: 30rpx;
+	color: #ef313a;
+}
+.incarnate_msg {
+	margin-top: 10rpx;
+	font-size: 28rpx;
+	color: #262626;
+}
+.incarnate_btn {
+	float: right;
+	margin-right: 20rpx;
+	margin-top: 45rpx;
+	width: 240rpx;
+	height: 100rpx;
+}
+.line {
+	width: 700rpx;
+	border: 1px solid #ebecef;
+	margin: 0 auto;
+}
+.incarnate_detail {
+	margin-top: 48rpx;
+	height: 120rpx;
+	overflow: hidden;
+}
+.incarnate_detail > view{
+	width: 49%;
+	height: 100%;
+	float: left;
+}
+.grand_rebate {
+	border-right: 1px solid #ebecef;
+	text-align: center;
+	/*line-height: 60rpx;*/
+}
+.rebate {
+	margin-top: 18rpx;
+	color: #ef313a;
+	font-size: 36rpx;
+}
+.rebate_msg {
+	font-size: 26rpx;
+	color: #262626;
+	margin-top: 18rpx;
+}
+.wait_rebate {
+	text-align: center;
+	float: left;
+}
+.my_indent {
+	width: 100%;
+	background: #fff;
+	padding: 26rpx;
+	margin-top: 20rpx;
+	box-sizing: border-box;
+}
+.indent_title {
+	display: flex;
+	justify-content: space-between;
+	font-size: 28rpx;
+	color: #262626;
+	padding-bottom: 23rpx;
+	/*border-bottom: 1px solid #ebecef;*/
+}
+.see_all {
+	color: #bdbdbd;
+}
+.my_list {
+	width: 100%;
+	height: 100rpx;
+	line-height: 100rpx;
+	overflow: hidden;
+	border-top: 1px solid #ebecef;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.my_list > image{
+	/*float: left;*/
+	width: 70rpx;
+	height: 70rpx;
+/*	vertical-align:middle;*/
+	margin-left: 10rpx;
+	margin-right: 20rpx;
+}
+.list_title{
+	/*float: left;*/
+	width: 200rpx;
+	font-size: 28rpx;
+	color: #262626;
+}
+.list_description {
+	width: 60%;
+}
+.list_description > text {
+	color: #bdbdbd;
+	font-size: 24rpx;
+	float: right;
+}
+.list_icon {
+	font-size: 28rpx;
+	/*color: #ebecef;*/
+	margin-left: 20rpx;
+}
+.lamp_content {
+	padding: 0 30rpx;
+	color: #262626;
+	font-size: 28rpx;
+	display: flex;
+	align-items: center;
+}
+.lamp_content image {
+	vertical-align: bottom;
+	margin-right: 50rpx;
+}
