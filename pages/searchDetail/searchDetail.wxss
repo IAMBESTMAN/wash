@@ -1,3 +1,4 @@
+@import '../components/pop_up_window/pop_up_window.wxss'
 page{
 	overflow-x: hidden;
 	width: 100%;

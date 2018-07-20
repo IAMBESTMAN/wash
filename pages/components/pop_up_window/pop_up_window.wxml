@@ -14,7 +14,7 @@
 			</block>
 		</swiper>	
 		<view class="mark_title">
-			{{detailData.itemName}}
+			{{detailData.title}}
 		</view>	
 		<view class="mark_detail_money">
 			<view class="icon_content">
@@ -22,7 +22,7 @@
 				<text class="icon_title">淘宝原价：</text>		
 			</view>	
 			<view class="price_sty">
-				¥{{detailData.originalPrice}}					
+				¥{{detailData.orignalPrice}}					
 			</view>
 		</view>
 		<view class="line_division">
@@ -35,8 +35,11 @@
 				<image class="icon_img" style="width: 20px;height: 20px"  src="../../images/icon_Popup_quan@2x.png" ></image>
 				<text class="icon_title">优惠劵：</text>		
 			</view>	
+			<view class="coupon_detail">
+				<text>{{detailData.couponInfo}}</text>
+			</view>
 			<view class="price_sty">
-				{{detailData.couponInfo}}		
+				<text>-¥{{detailData.coupon}}</text>
 			</view>
 		</view>
 		<view class="line_division">
@@ -50,7 +53,7 @@
 				<text class="icon_title">购物奖励：</text>		
 			</view>	
 			<view class="save_money">
-				¥{{detailData.differ}}
+				¥{{detailData.saveMoney}}
 			</view>
 		</view>
 		<view class="line_division">
